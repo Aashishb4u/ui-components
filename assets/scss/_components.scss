@@ -1,0 +1,293 @@
+/*******************
+    General
+*******************/
+
+body {
+    font-size: $font-size-base;
+    color: $body-color;
+    font-family: $font-family-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row>* {
+    position: relative;
+}
+
+a {
+    text-decoration: none !important;
+    transition: all 400ms ease-in-out;
+}
+
+
+
+/*******************
+    Helper
+*******************/
+
+.font-10 {
+    font-size: 10px;
+}
+
+.font-11 {
+    font-size: 11px;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.font-13 {
+    font-size: 13px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-19 {
+    font-size: 19px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-21 {
+    font-size: 21px;
+}
+
+.font-22 {
+    font-size: 22px;
+}
+
+.font-23 {
+    font-size: 23px;
+}
+
+.font-24 {
+    font-size: 24px;
+}
+
+.font-25 {
+    font-size: 25px;
+}
+
+.title {
+    margin-top: 0px;
+    font-size: 26px;
+}
+
+.font-weight-medium {
+    font-weight: $font-weight-medium !important;
+}
+
+.avatar-sm {
+    height: 16px;
+    width: 16px;
+}
+
+.avatar-md {
+    height: 32px;
+    width: 32px;
+}
+
+.avatar-lg {
+    height: 48px;
+    width: 48px;
+}
+
+.avatar-xl {
+    height: 54px;
+    width: 54px;
+}
+
+.box-shadow {
+    box-shadow: $box-shadow;
+}
+
+.avatar-title {
+    align-items: center;
+    display: flex;
+    font-weight: $font-weight-medium;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.text-orange {
+    color: #fb923c;
+}
+
+/* Badges */
+.badge {
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 700 !important;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    padding: 10px 18px;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 0.25rem !important;
+}
+
+.btn-sm {
+    padding: 8px 14px;
+}
+
+@each $name,
+$value in $colors {
+    .bg-#{$name} {
+        background-color: #{$value} !important;
+    }
+
+    .bg-soft-#{$name} {
+        background-color: rgba(($value), 0.2) !important;
+    }
+
+    .text-#{$name} {
+        color: #{$value} !important;
+    }
+
+    .btn-#{$name} {
+        color: $white;
+        background: #{$value};
+        border-color: #{$value};
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus,
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled):active:focus,
+        .open>.dropdown-toggle.btn-primary {
+            background: darken($value, 4%);
+            border-color: darken($value, 4%);
+        }
+    }
+
+    .btn-soft-#{$name} {
+        background: rgba(($value), 0.2);
+        // border-color: #{$value};
+        color: #{$value};
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus,
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled):active:focus,
+        .open>.dropdown-toggle.btn-primary {
+            background: #{$value};
+            border-color: #{$value};
+            color: $white;
+        }
+    }
+
+    .btn-outline-#{$name} {
+        color: #{$value};
+        border-color: #{$value};
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus,
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled):active:focus,
+        .open>.dropdown-toggle.btn-primary {
+            background: darken($value, 4%);
+            border-color: darken($value, 4%);
+            color: $white;
+        }
+    }
+
+    .badge-soft-#{$name} {
+        background: rgba(($value), 0.2);
+        // border-color: #{$value};
+        color: #{$value};
+    }
+}
+
+.btn-light {
+    color: $gray-800;
+}
+
+.custom-select,
+.custom-control {
+
+    .form-select,
+    .form-control {
+        &:focus {
+            box-shadow: none !important;
+            border-color: #dee2e6 !important;
+        }
+    }
+}
+
+
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.text-tran-box {
+    background: linear-gradient(to left, #f1556c, #6658dd);
+}
+
+.text-transparent {
+    background: #f8f9fa;
+    color: #240e35;
+    mix-blend-mode: lighten;
+    overflow: hidden;
+    font-size: 36px;
+    margin-bottom: 40px;
+    line-height: 54px;
+    font-weight: 600;
+}
+
+.demo-box:hover {
+    transform: translateY(-0.5rem);
+}
+
+.demo-box {
+    padding: 20px 0 30px 0;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.demo-box a {
+    box-shadow: 0 1px 50px rgba(153, 153, 153, 0.35);
+}
+
+// .demo-box h4 {
+//     text-transform: uppercase;
+//     font-weight: 700;
+//     margin-top: 20px;
+//     font-size: 14px;
+// }

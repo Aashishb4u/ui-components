@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> TechCard - Tailwind Card HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="TechCard - Tailwind Card HTML Template, It’s fully responsive and built Tailwind v3" name="description" />
+    <meta content="Techzaa" name="author" />
+    <link href="./src/output.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Style css -->
+    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <!-- Section Start -->
+    <section class="section pt-28 pb-20" id="home">
+        <div class="mx-10">
+            <div class="lg:flex justify-center">
+                <div class="text-center">
+                    <div class="text-center">
+                        <h1 class="text-4xl font-semibold leading-[50px] tracking-wide mb-10 bg-gradient-to-l from-pink-400 to-blue-600 [background-clip:text]">
+                            TechCard - Tailwind Card HTML Template
+                        </h1>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section End -->
+
+    <section class="pb-20">
+        <div class="container">
+            <div>
+                <h1 class="text-lg font-semibold text-center mb-5">Card-1</h1>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+                    <div class="overflow-hidden">
+                        <div class="relative rounded-2xl group overflow-hidden">
+                            <div>
+                                <div class="overflow-hidden">
+                                    <img src="assets/images/img-5.jpg" class="h-60 scale-[1.2] group-hover:scale-[1] transition-all duration-500" alt="">
+                                </div>
+                                <div class="bg-gray-50 p-3 pb-5 ">
+                                    <span class="text-base font-normal">Recipe</span>
+                                    <h3 class="text-xl font-semibold">Crisp Spanish tortilla Matzo brei</h3>
+                                    <p>by <a href="#">Celeste Mills</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden">
+                        <div class="relative rounded-2xl group overflow-hidden">
+                            <div>
+                                <div class="overflow-hidden">
+                                    <img src="assets/images/img-6.jpeg" class="h-60 scale-[1.2] group-hover:scale-[1] transition-all duration-500" alt="">
+                                </div>
+                                <div class="bg-gray-50 p-3 pb-5 ">
+                                    <span class="text-base font-normal">Travel</span>
+                                    <h3 class="text-xl font-semibold">Discover the sea</h3>
+                                    <p>by <a href="#">John Doe</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden">
+                        <div class="relative rounded-2xl group overflow-hidden">
+                            <div>
+                                <div class="overflow-hidden">
+                                    <img src="assets/images/img-16.png" class="h-60 scale-[1.2] group-hover:scale-[1] transition-all duration-500" alt="">
+                                </div>
+                                <div class="bg-gray-50 p-3 pb-5 ">
+                                    <span class="text-base font-normal">Recipe</span>
+                                    <h3 class="text-xl font-semibold">The Coldest Sunset</h3>
+                                    <p>by <a href="#">Celeste Mills</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="text-lg font-semibold text-center my-10">Card-2</h1>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+                    <div>
+                        <div class="h-[300px] w-full p-5 text-white bg-cover relative flex cursor-pointer rounded-xl" style="background-image: url('assets/images/img-14.jpg');">
+                            <div class="flex flex-col items-center justify-center rounded-xl bg-neutral-900/70 h-full w-full transition-all duration-500 opacity-0 hover:opacity-100" onclick="OnClick()">
+                                <h2 class="text-3xl font-semibold m-4">Dubai</h2>
+                                <h3 class="text-lg font-medium uppercase">United Arab Emirates</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="h-[300px] w-full p-5 text-white bg-cover relative flex cursor-pointer rounded-xl" style="background-image: url('assets/images/img-13.jpg');">
+                            <div class="flex flex-col items-center justify-center rounded-xl bg-neutral-900/70 h-full w-full transition-all duration-500 opacity-0 hover:opacity-100" onclick="OnClick()">
+                                <h2 class="text-3xl font-semibold m-4">FOREST</h2>
+                                <h3 class="text-lg font-medium uppercase">United Arab Emirates</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="h-[300px] w-full p-5 text-white bg-cover relative flex cursor-pointer rounded-xl" style="background-image: url('assets/images/img-15.jpg');">
+                            <div class="flex flex-col items-center justify-center rounded-xl bg-neutral-900/70 h-full w-full transition-all duration-500 opacity-0 hover:opacity-100" onclick="OnClick()">
+                                <h2 class="text-3xl font-semibold m-4">TRACK</h2>
+                                <h3 class="text-lg font-medium uppercase">United Arab Emirates</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="text-lg font-semibold text-center my-10">Card-3</h1>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+                    <div>
+                        <div class="relative inline-block me-0.5 mb-4 w-full">
+                            <div class="p-5 hover:rotate-180 block transition-all duration-500 text-white bg-cover bg-center h-[220px] rounded-xl bg-gray-800" style="background-image: url('assets/images/img-9.webp');">
+                                <h1 class="text-xl font-semibold">MOUNTAIN
+                                </h1>
+                            </div>
+                            <div class="p-5 hover:opacity-100 transition-all block text-white bg-cover bg-center rounded-xl bg-gray-800 absolute opacity-0 top-0 left-0 h-full w-full">
+                                <h2 class="text-base font-medium">Blonkisoaz</h2>
+                                <p class="text-base font-normal text-gray-400">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="relative inline-block me-0.5 mb-4 w-full">
+                            <div class="p-5 hover:rotate-180 block transition-all duration-500 text-white bg-cover bg-center h-[220px] rounded-xl bg-gray-800" style="background-image: url('assets/images/img-7.jpg');">
+                                <h1 class="text-xl font-semibold uppercase">Lake
+                                </h1>
+                            </div>
+                            <div class="p-5 hover:opacity-100 transition-all block text-white bg-cover bg-center rounded-xl bg-gray-800 absolute opacity-0 top-0 left-0 h-full w-full">
+                                <h2 class="text-base font-medium">Oretemauw</h2>
+                                <p class="text-base font-normal text-gray-400">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="relative inline-block me-0.5 mb-4 w-full">
+                            <div class="p-5 hover:rotate-180 block transition-all duration-500 text-white bg-cover bg-center h-[220px] rounded-xl bg-gray-800" style="background-image: url('assets/images/img-8.jpg');">
+                                <h1 class="text-xl font-semibold">Angular
+                                </h1>
+                            </div>
+                            <div class="p-5 hover:opacity-100 transition-all block text-white bg-cover bg-center rounded-xl bg-gray-800 absolute opacity-0 top-0 left-0 h-full w-full">
+                                <h2 class="text-base font-medium">Inatethi</h2>
+                                <p class="text-base font-normal text-gray-400">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+
+            <div>
+                <h1 class="text-lg font-semibold text-center my-10">Card-4</h1>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+                    <div class="overflow-hidden">
+                        <a href="#" class="relative overflow-hidden w-[25%] group">
+                            <div class="p-5 w-full absolute flex flex-col items-center bg-black transition-all duration-500 -bottom-28 min-h-[100px] z-[2] group-hover:bottom-0 group-hover:text-white">
+                                <span class="text-xl font-semibold">Web Design</span>
+                                <span class="text-base font-normal">Mobile / Design / Rebranding</span>
+                            </div>
+                            <div class="h-full z-[1]">
+                                <img src="assets/images/img-17.jpg" class="h-full w-full transition-all duration-500 scale-[1.2] group-hover:scale-[1]" alt="">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="overflow-hidden">
+                        <a href="#" class="relative overflow-hidden w-[25%] group">
+                            <div class="p-5 w-full absolute flex flex-col items-center bg-black transition-all duration-500 -bottom-28 min-h-[100px] z-[2] group-hover:bottom-0 group-hover:text-white">
+                                <span class="text-xl font-semibold">UX Design</span>
+                                <span class="text-base font-normal">UX / UI / Research</span>
+                            </div>
+                            <div class="h-full z-[1]">
+                                <img src="assets/images/img-18.jpg" class="h-full w-full transition-all duration-500 scale-[1.2] group-hover:scale-[1]" alt="">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="overflow-hidden">
+                        <a href="#" class="relative overflow-hidden w-[25%] group">
+                            <div class="p-5 w-full absolute flex flex-col items-center bg-black transition-all duration-500 -bottom-28 min-h-[100px] z-[2] group-hover:bottom-0 group-hover:text-white">
+                                <span class="text-xl font-semibold">AR-VR</span>
+                                <span class="text-base font-normal">VR / AR / Creative</span>
+                            </div>
+                            <div class="h-full z-[1]">
+                                <img src="assets/images/img-19.jpg" class="h-full w-full transition-all duration-500 scale-[1.2] group-hover:scale-[1]" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="text-lg font-semibold text-center my-10 py-10">Card-5</h1>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-20">
+                    <div class="group">
+                        <div class="relative flex items-start justify-center w-[350px] h-[300px] max-w-full border border-gray-100 bg-white rounded-lg shadow-lg hover:h-[400px] transition-all duration-500">
+                            <div class="absolute top-5 w-80 h-56 rounded-lg bg-neutral-800 group-hover:-top-28 group-hover:scale-75 group-hover:shadow transition-all duration-500">
+                                <img src="assets/images/img-11.png" class="absolute rounded-xl top-0 left-0 w-full h-full object-cover">
+                            </div>
+                            <div class="px-8 absolute top-64 w-full h-9 text-center overflow-hidden group-hover:top-32 group-hover:h-60 transition-all duration-500">
+                                <h2 class="text-2xl font-extrabold text-green-800">Leafs</h2>
+                                <p class="text-base font-normal mt-4 text-neutral-950">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Architecto, hic? Magnam eum error saepe doloribus corrupti
+                                    repellat quisquam alias doloremque!
+                                </p>
+                                <a href="#" class="py-3 px-6 relative top-10 rounded-md text-white bg-green-800 hover:bg-green-800/90">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="relative flex items-start justify-center w-[350px] h-[300px] max-w-full border border-gray-100 bg-white rounded-lg shadow-lg hover:h-[400px] transition-all duration-500">
+                            <div class="absolute top-5 w-80 h-56 rounded-lg bg-neutral-800 group-hover:-top-28 group-hover:scale-75 group-hover:shadow transition-all duration-500">
+                                <img src="assets/images/img-12.png" class="absolute rounded-xl top-0 left-0 w-full h-full object-cover">
+                            </div>
+                            <div class="px-8 absolute top-64 w-full h-9 text-center overflow-hidden group-hover:top-32 group-hover:h-60 transition-all duration-500">
+                                <h2 class="text-2xl font-extrabold text-green-800">Fruits</h2>
+                                <p class="text-base font-normal mt-4 text-neutral-950">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Architecto, hic? Magnam eum error saepe doloribus corrupti
+                                    repellat quisquam alias doloremque!
+                                </p>
+                                <a href="#" class="py-3 px-6 relative top-10 rounded-md text-white bg-green-800 hover:bg-green-800/90">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="relative flex items-start justify-center w-[350px] h-[300px] max-w-full border border-gray-100 bg-white rounded-lg shadow-lg hover:h-[400px] transition-all duration-500">
+                            <div class="absolute top-5 w-80 h-56 rounded-lg bg-neutral-800 group-hover:-top-28 group-hover:scale-75 group-hover:shadow transition-all duration-500">
+                                <img src="assets/images/img-11.png" class="absolute rounded-xl top-0 left-0 w-full h-full object-cover">
+                            </div>
+                            <div class="px-8 absolute top-64 w-full h-9 text-center overflow-hidden group-hover:top-32 group-hover:h-60 transition-all duration-500">
+                                <h2 class="text-2xl font-extrabold text-green-800">Flowers</h2>
+                                <p class="text-base font-normal mt-4 text-neutral-950">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Architecto, hic? Magnam eum error saepe doloribus corrupti
+                                    repellat quisquam alias doloremque!
+                                </p>
+                                <a href="#" class="py-3 px-6 relative top-10 rounded-md text-white bg-green-800 hover:bg-green-800/90">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="text-lg font-semibold text-center my-10">Card-6</h1>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+                    <div>
+                        <div class="p-6 mb-6 border border-gray-100 transition duration-500 group transform hover:-translate-y-2 hover:shadow-2xl rounded-2xl cursor-pointer">
+                            <a href="#1" class="absolute opacity-0 top-0 end-0 start-0-0 bottom-0"></a>
+                            <div class="relative mb-4 rounded-lg">
+                                <img class="h-52 rounded-lg w-full object-cover transition-transform duration-500 transform group-hover:scale-105" src="assets/images/img-20.png" alt="">
+                                <a class="flex justify-center items-center bg-purple-500 bg-opacity-80 z-10 absolute top-0 start-0-0 w-full h-full text-white rounded-lg opacity-0 transition-all duration-300 transform group-hover:scale-105 text-xl group-hover:opacity-100" href="#" target="_blank" rel="noopener noreferrer">
+                                    Read article <svg class="ml-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="flex justify-between items-center w-full pb-4 mb-auto">
+                                <div class="flex items-center">
+                                    <div class="pr-3">
+                                        <img class="h-12 w-12 rounded-full object-cover" src="assets/images/img-22.png" alt="">
+                                    </div>
+                                    <div class="flex flex-1">
+                                        <div class="">
+                                            <p class="text-sm font-semibold">Booby Purly</p>
+                                            <p class="text-sm text-gray-500">Published 53 minutes ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-end">
+                                    <div class="text-sm flex items-center text-gray-500">
+                                        6 min <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="font-medium text-xl leading-8">
+                                <a href="#2" class="block relative group-hover:text-purple-500 transition-colors duration-200">
+                                    Lorem ipsum dolor sit amet, Sed ad minus voluptate?
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="p-6 mb-6 border border-gray-100 transition duration-500 group transform hover:-translate-y-2 hover:shadow-2xl rounded-2xl cursor-pointer">
+                            <a href="#1" class="absolute opacity-0 top-0 end-0 start-0-0 bottom-0"></a>
+                            <div class="relative mb-4 rounded-lg">
+                                <img class="h-52 rounded-lg w-full object-cover transition-transform duration-500 transform group-hover:scale-105" src="assets/images/img-28.png" alt="">
+                                <a class="flex justify-center items-center bg-purple-500 bg-opacity-80 z-10 absolute top-0 start-0-0 w-full h-full text-white rounded-lg opacity-0 transition-all duration-300 transform group-hover:scale-105 text-xl group-hover:opacity-100" href="#" target="_blank" rel="noopener noreferrer">
+                                    Read article <svg class="ml-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="flex justify-between items-center w-full pb-4 mb-auto">
+                                <div class="flex items-center">
+                                    <div class="pr-3">
+                                        <img class="h-12 w-12 rounded-full object-cover" src="assets/images/img-22.png" alt="">
+                                    </div>
+                                    <div class="flex flex-1">
+                                        <div class="">
+                                            <p class="text-sm font-semibold">Audie predovic</p>
+                                            <p class="text-sm text-gray-500">Published 53 minutes ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-end">
+                                    <div class="text-sm flex items-center text-gray-500">
+                                        5 min <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="font-medium text-xl leading-8">
+                                <a href="#2" class="block relative group-hover:text-purple-500 transition-colors duration-200">
+                                    Interactive aggregate inltiatives
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="p-6 mb-6 border border-gray-100 transition duration-500 group transform hover:-translate-y-2 hover:shadow-2xl rounded-2xl cursor-pointer">
+                            <a href="#1" class="absolute opacity-0 top-0 end-0 start-0-0 bottom-0"></a>
+                            <div class="relative mb-4 rounded-lg">
+                                <img class="h-52 rounded-lg w-full object-cover transition-transform duration-500 transform group-hover:scale-105" src="assets/images/img-29.jpg" alt="">
+                                <a class="flex justify-center items-center bg-purple-500 bg-opacity-80 z-10 absolute top-0 start-0 w-full h-full text-white rounded-lg opacity-0 transition-all duration-300 transform group-hover:scale-105 text-xl group-hover:opacity-100" href="#" target="_blank" rel="noopener noreferrer">
+                                    Read article <svg class="ml-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="flex justify-between items-center w-full pb-4 mb-auto">
+                                <div class="flex items-center">
+                                    <div class="pr-3">
+                                        <img class="h-12 w-12 rounded-full object-cover" src="assets/images/img-22.png" alt="">
+                                    </div>
+                                    <div class="flex flex-1">
+                                        <div class="">
+                                            <p class="text-sm font-semibold">Martine moore</p>
+                                            <p class="text-sm text-gray-500">Published 53 minutes ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-end">
+                                    <div class="text-sm flex items-center text-gray-500">
+                                        7 min <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="font-medium text-xl leading-8">
+                                <a href="#2" class="block relative group-hover:text-purple-500 transition-colors duration-200">
+                                    Enterprise incentivize web-readiness
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="text-lg font-semibold text-center my-10">Card-7</h1>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 justify-center">
+                    <div class="mx-auto">
+                        <div class="group inline-block pb-4 bg-gradient-to-tr from-purple-600 to-orange-400 overflow-hidden rounded-2xl shadow hover:shadow-md transition">
+                            <div class="max-h-64 aspect-square overflow-hidden">
+                                <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-125" src="assets/images/img-23.jpg" />
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold">The Giant</h3>
+                                <p class="font-serif">Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="flex gap-2 px-4">
+                                <button class="text-blue-400 hover:text-red-400">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <button class="text-blue-400 hover:text-red-400">
+                                    <i class="fa-solid fa-comment"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mx-auto">
+                        <div class="group inline-block pb-4 bg-gradient-to-tr from-purple-600 to-orange-400 overflow-hidden rounded-2xl shadow hover:shadow-md transition">
+                            <div class="max-h-64 aspect-square overflow-hidden">
+                                <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-125" src="assets/images/img-24.png" />
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold">The Barbarian</h3>
+                                <p class="font-serif">Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="flex gap-2 px-4">
+                                <button class="text-blue-400 hover:text-red-400">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <button class="text-blue-400 hover:text-red-400">
+                                    <i class="fa-solid fa-comment"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mx-auto">
+                        <div class="group inline-block pb-4 bg-gradient-to-tr from-purple-600 to-orange-400 overflow-hidden rounded-2xl shadow hover:shadow-md transition">
+                            <div class="max-h-64 aspect-square overflow-hidden">
+                                <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-125" src="assets/images/img-25.png" />
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold">The Archer</h3>
+                                <p class="font-serif">Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="flex gap-2 px-4">
+                                <button class="text-blue-400 hover:text-red-400">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <button class="text-blue-400 hover:text-red-400">
+                                    <i class="fa-solid fa-comment"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="text-lg font-semibold text-center my-10">Card-8</h1>
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 py-10">
+                    <div class="group group-hover:before:-translate-y-[4%] transition-all duration-500 group-hover:after:translate-Y-[50%] relative h-[350px] w-full flex text-center text-white bg-white shadow-lg overflow-hidden before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-cover before:pointer-events-none before:bg-[url('../images/img-4.png')] after:block after:absolute after:top-0 after:left-0 after:w-[100%] after:h-[200%] after:pointer-events-none after:bg-gradient-to-t after:from-neutral-900 after:translate-y-0">
+                        <div class="translate-y-3/4 transition-all duration-500 p-4 relative flex flex-col items-center w-full z-10 group-hover:pt-24 group-hover:translate-y-0 group-hover:bg-black/50">
+                            <h2 class="text-lg font-semibold">Mountain View</h2>
+                            <p class="mt-4 text-sm font-medium italic opacity-0 group-hover:opacity-100">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                            <button class="px-5 py-3 cursor-pointer mt-4 text-xs font-normal tracking-wide uppercase text-white bg-black border-none group-hover:bg-black/90 focus:outline-amber-300 outline-offset-2">View Trips</button>
+                        </div>
+                    </div>
+
+                    <div class="group group-hover:before:-translate-y-[4%] transition-all duration-500 group-hover:after:translate-Y-[50%] relative h-[350px] w-full flex text-center text-white bg-white shadow-lg overflow-hidden before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-cover before:pointer-events-none before:bg-[url('../images/img-3.png')] after:block after:absolute after:top-0 after:left-0 after:w-[100%] after:h-[200%] after:pointer-events-none after:bg-gradient-to-t after:from-neutral-900 after:translate-y-0">
+                        <div class="translate-y-3/4 transition-all duration-500 p-4 relative flex flex-col items-center w-full z-10 group-hover:pt-24 group-hover:translate-y-0 group-hover:bg-black/50">
+                            <h2 class="text-lg font-semibold">To The Beach</h2>
+                            <p class="mt-4 text-sm font-medium italic opacity-0 group-hover:opacity-100">Plan your next beach trip with these fabulous destinations</p>
+                            <button class="px-5 py-3 cursor-pointer mt-4 text-xs font-normal tracking-wide uppercase text-white bg-black border-none group-hover:bg-black/90 focus:outline-amber-300 outline-offset-2">View Trips</button>
+                        </div>
+                    </div>
+
+                    <div class="group group-hover:before:-translate-y-[4%] transition-all duration-500 group-hover:after:translate-Y-[50%] relative h-[350px] w-full flex text-center text-white bg-white shadow-lg overflow-hidden before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-cover before:pointer-events-none before:bg-[url('../images/img-2.png')] after:block after:absolute after:top-0 after:left-0 after:w-[100%] after:h-[200%] after:pointer-events-none after:bg-gradient-to-t after:from-neutral-900 after:translate-y-0">
+                        <div class="translate-y-3/4 transition-all duration-500 p-4 relative flex flex-col items-center w-full z-10 group-hover:pt-24 group-hover:translate-y-0 group-hover:bg-black/50">
+                            <h2 class="text-lg font-semibold">Desert Destinations</h2>
+                            <p class="mt-4 text-sm font-medium italic opacity-0 group-hover:opacity-100">It's the desert you've always dreamed of</p>
+                            <button class="px-5 py-3 cursor-pointer mt-4 text-xs font-normal tracking-wide uppercase text-white bg-black border-none group-hover:bg-black/90 focus:outline-amber-300 outline-offset-2">View Trips</button>
+                        </div>
+                    </div>
+
+                    <div class="group group-hover:before:-translate-y-[4%] transition-all duration-500 group-hover:after:translate-Y-[50%] relative h-[350px] w-full flex text-center text-white bg-white shadow-lg overflow-hidden before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-cover before:pointer-events-none before:bg-[url('../images/img-1.png')] after:block after:absolute after:top-0 after:left-0 after:w-[100%] after:h-[200%] after:pointer-events-none after:bg-gradient-to-t after:from-neutral-900 after:translate-y-0">
+                        <div class="translate-y-3/4 transition-all duration-500 p-4 relative flex flex-col items-center w-full z-10 group-hover:pt-24 group-hover:translate-y-0 group-hover:bg-black/50">
+                            <h2 class="text-lg font-semibold">Explore The Galaxy</h2>
+                            <p class="mt-4 text-sm font-medium italic opacity-0 group-hover:opacity-100">Seriously, straight up, just blast off into outer space today</p>
+                            <button class="px-5 py-3 cursor-pointer mt-4 text-xs font-normal tracking-wide uppercase text-white bg-black border-none group-hover:bg-black/90 focus:outline-amber-300 outline-offset-2">View Trips</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="text-lg font-semibold text-center my-10">Card-9</h1>
+                <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 mt-10">
+                    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+                        <div class="md:flex">
+                            <div class="md:flex-shrink-0">
+                                <img class="h-full w-full object-cover md:w-48" src="assets/images/img-26.png" alt="">
+                            </div>
+                            <div class="p-8">
+                                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
+                                <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+                                <p class="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+                        <div class="md:flex">
+                            <div class="md:flex-shrink-0">
+                                <img class="h-full w-full object-cover md:w-48" src="assets/images/img-27.png" alt="">
+                            </div>
+                            <div class="p-8">
+                                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
+                                <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Can coffee make you a better developer</a>
+                                <p class="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-8 duration-500 ease-in-out">
+                        <div class="md:flex">
+                            <div class="md:flex-shrink-0">
+                                <img class="h-full w-full object-cover md:w-48" src="https://picsum.photos/seed/hover/400/500" alt="">
+                            </div>
+                            <div class="p-8">
+                                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
+                                <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+                                <p class="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-5 transform hover:scale-105 duration-500 ease-in-out">
+                        <div class="md:flex">
+                            <div class="md:flex-shrink-0">
+                                <img class="h-full w-full object-cover md:w-48" src="https://picsum.photos/seed/pic/400/500" alt="Man looking at item at a store">
+                            </div>
+                            <div class="p-8">
+                                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
+                                <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+                                <p class="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
