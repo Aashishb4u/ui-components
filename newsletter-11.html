@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> NewsVibe - Tailwind CSS Newsletter Section Tamplate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully responsive section which can be used to Newsletter" name="description" />
+    <meta content="Techzaa" name="author" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Style css -->
+    <link href="./assets/css/newsletter_style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <section class="py-12 px-4 lg:h-screen flex items-center justify-center">
+        <div class="container">
+            <div class="md:px-12 md:py-20 p-6 rounded-3xl shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] bg-cover bg-no-repeat bg-[url(/assets/images/newsletter/bg-3.png)]">
+                <div class="max-w-2xl mx-auto text-center">
+                    <div class="max-w-xl mx-auto">
+                        <div class="flex justify-center">
+                            <div class="h-14 w-14 flex items-center justify-center rounded-full text-blue-500 bg-blue-500/10">
+                                <i class="ti ti-mail text-3xl"></i>
+                            </div>
+                        </div>
+                        <h5 class="text-sm font-medium text-gray-50 mt-6">Our Newsletter</h5>
+                        <h2 class="md:text-4xl/tight text-2xl font-bold text-gray-50 mt-2">Subscribe To our newsletter!</h2>
+                        <p class="text-base font-medium text-gray-100 mt-2">Sign up for our weekly newsletter to stay informed about exciting offers, our latest products, and industry updates</p>
+                        <form class="w-full flex flex-wrap sm:flex-nowrap items-center sm:justify-between justify-center gap-4 mt-9">
+                            <input id="email-address" name="email" type="email" autocomplete="email" required="" class="min-w-0 flex-auto rounded-full border-gray-700 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-0 focus:ring-0 focus:ring-inset focus:border-gray-700 sm:text-sm sm:leading-6 placeholder:text-white" placeholder="Enter your email">
+                            <button class="py-2.5 px-6 font-semibold text-base rounded-full text-white bg-blue-500 hover:bg-blue-600 transition-all duration-500">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> NewsVibe - Tailwind CSS Newsletter Section Tamplate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully responsive section which can be used to Newsletter" name="description" />
+    <meta content="Techzaa" name="author" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Style css -->
+    <link href="./assets/css/newsletter_style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <section class="py-48 px-4 lg:py-52 flex items-center justify-center relative">
+        <div class="absolute inset-0">
+            <div class="py-60 bg-blue-50 relative">
+                <div class="absolute inset-x-0 bottom-0">
+                    <img src="assets/images/newsletter/bg-1.png" class="w-full h-full" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="flex flex-wrap sm:flex-nowrap items-center justify-center md:gap-20 gap-6 relative mb-10">
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-gray-950">2000+</h2>
+                    <p class="text-base font-medium text-gray-400 mt-1">Ui components</p>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-gray-950">20</h2>
+                    <p class="text-base font-medium text-gray-400 mt-1">Software types</p>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-gray-950">20</h2>
+                    <p class="text-base font-medium text-gray-400 mt-1">Weekly uploads</p>
+                </div>
+            </div>
+            <div class="max-w-5xl md:p-12 p-6 mx-auto rounded-2xl overflow-hidden border border-gray-200 shadow-md relative bg-cover bg-[url(/assets/images/newsletter/bg-5.png)]">
+                <div class="max-w-xl mx-auto text-center">
+                    <h2 class="text-4xl/tight font-bold text-gray-50">Join our newsletter</h2>
+                    <p class="text-base font-medium text-gray-100 mt-1">Weekly free ui resources straight to you inbox</p>
+
+                    <form class="mt-6">
+                        <div class="relative flex items-center p-1 bg-white/5 border border-gray-700 rounded-md">
+                            <input type="email" placeholder="Email Address" class="px-2 py-2.5 text-white w-full text-base border-0 ring-0 bg-transparent outline-none focus:ring-0 placeholder:text-white" />
+                            <button type="button" class="px-4 py-2.5 rounded text-white tracking-wider font-semibold border-none outline-none bg-blue-500 hover:bg-blue-600 transition-all duration-500">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
