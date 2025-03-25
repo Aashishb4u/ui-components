@@ -4,11 +4,11 @@
 
 <head>
     <meta charset="utf-8" />
-    <title> TechAuth - Authentication Pages Tailwind CSS 3 HTML Template</title>
+    <title> CreativeHand - Tailwind Card HTML Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="TechAuth - Authentication Page HTML Template, Tailwind CSS v3.3.2" name="description" />
+    <meta content="CreativeHand - Tailwind Card HTML Template, It’s fully responsive and built Tailwind v3" name="description" />
     <meta content="Techzaa" name="author" />
-
+    <link href="./src/output.css" rel="stylesheet">
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
@@ -18,43 +18,15 @@
 
 
 <body>
-    <!-- Navbar Start -->
-    <div class="flex flex-col">
-        <nav id="nav" class="py-8 md:border-b-0 border-b" role="navigation">
-            <div class="container flex flex-wrap items-center md:flex-no-wrap">
-                <a href="#" class="flex items-center">
-                    <img src="assets/images/logo.png" alt="logo" class="h-12">
-                    <div class="ms-2 text-xl uppercase">TechAuth</div>
-                </a>
-                <div class="ml-auto md:hidden">
-                    <button onclick="menuToggle()" class="flex items-center rounded" type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                    </button>
-                </div>
-                <div id="menu" class="w-full md:w-auto h-0 transition-all ease-out duration-300 md:transition-none md:flex-grow md:flex md:items-center opacity-0 md:opacity-100">
-                    <ul id="ulMenu" class="flex flex-col duration-300 ease-out sm:transition-none md:flex-row ml-auto mt-5 md:mt-0">
-                        <li>
-                            <a class="lg:px-6 font-medium font-secondary block text-blue-500 p-3 uppercase text-sm" href="#" title="Home">Home</a>
-                        </li>
-                        <li>
-                            <a class="lg:px-6 font-medium font-secondary block text-black/70 hover:text-blue-500 p-3 uppercase text-sm" href="#demos" title="About">Demos</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-
+    
     <!-- Section Start -->
-    <section class="section py-14" id="home">
-        <div class="container">
+    <section class="section md:py-14" id="home">
+        <div class="container mx-auto">
             <div class="lg:flex justify-center">
                 <div class=" mx-2">
                     <div class="text-center">
-                        <h1 class="text-4xl font-semibold leading-[50px] tracking-wide text-transparent bg-clip-text bg-gradient-to-l from-pink-400 to-blue-600 mb-10">
-                            TechAuth - Authentication Pages Tailwind CSS 3 HTML Template
+                        <h1 class="text-4xl font-semibold leading-[50px] tracking-wide text-transparent bg-clip-text bg-gradient-to-l from-pink-400 to-blue-600 md:mb-10">
+                            Authentication Pages Tailwind CSS 3 HTML Template
                         </h1>
                     </div>
                 </div>
@@ -65,7 +37,7 @@
 
     <!-- shuffle portfolio -->
     <section class="section pb-16 scroll-mt-5" id="demos">
-        <div class="mx-14">
+        <div class="md:mx-14">
             <div class="text-2xl text-center font-semibold mb-10">HTML Demo</div>
             <div class="grid lg:grid-cols-3 gap-4 justify-center">
                 <div class="mx-auto px-4">

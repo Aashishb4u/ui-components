@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> CreativeHand - Tailwind Card HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="CreativeHand - Tailwind Card HTML Template, It’s fully responsive and built Tailwind v3" name="description" />
+    <meta content="Techzaa" name="author" />
+    <link href="./src/output.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Style css -->
+    <link href="assets/css/contact-us_style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <section class="py-20 lg:h-screen flex items-center justify-center">
+        <div class="container mx-auto">
+            <div class="grid lg:grid-cols-5 gap-12 items-center">
+                <div class="lg:col-span-3">
+                    <h2 class="text-2xl font-bold">Property request</h2>
+                    <p class="text-base font-semibold text-gray-500 mt-3">Avg. responding time is 8 working hours.</p>
+
+                    <form class="mt-8">
+                        <div class="space-y-6">
+                            <div class="grid md:grid-cols-2 grid-cols-1 gap-5">
+                                <input class="border-gray-200 focus:ring-0 focus:border-gray-200 bg-gray-50 text-sm font-medium rounded py-2.5 px-4 w-full" type="text" id="fname" name="fname" placeholder="Name">
+
+                                <input class="border-gray-200 focus:ring-0 focus:border-gray-200 bg-gray-50 text-sm font-medium rounded py-2.5 px-4 w-full" type="text" id="Surname" name="Surname" placeholder="Surname">
+                            </div>
+
+                            <input class="border-gray-200 focus:ring-0 focus:border-gray-200 bg-gray-50 text-sm font-medium rounded py-2.5 px-4 w-full" type="email" id="email" name="email" placeholder="Your Email">
+                            <input class="border-gray-200 focus:ring-0 focus:border-gray-200 bg-gray-50 text-sm font-medium rounded py-2.5 px-4 w-full" type="number" id="number" name="number" placeholder="Phone Number">
+                            <textarea class="border-gray-200 focus:ring-0 focus:border-gray-200 bg-gray-50 text-sm font-medium rounded py-2.5 px-4 w-full" name="message" rows="5" placeholder="Example Text"></textarea>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 bg-gray-50" id="hs-default-checkbox">
+                                <label for="hs-default-checkbox" class="text-base font-semibold text-gray-500">Save my name and email in this browser for future comments.</label>
+                            </div>
+
+                            <div>
+                                <button class="py-2.5 w-full rounded-md text-base font-semibold text-white bg-blue-500 hover:bg-blue-600 transition-all duration-500">Contact Agent</button>
+                            </div>
+                        </div><!-- grid End -->
+                    </form><!-- form End -->
+                </div>
+
+                <div class="lg:col-span-2">
+                    <div class="mb-6">
+                        <img src="assets/images/contact/img-5.png" class="rounded-xl" alt="">
+                    </div>
+                    <div class="p-6 border border-gray-200 rounded-xl bg-gray-50">
+                        <h2 class="text-xl font-bold text-gray-950">Meet Anne</h2>
+                        <p class="text-base font-semibold text-gray-500 mt-4">"As your dedicated agent, I'm committed to helping you discover your ideal home. No challenge is too big; I'll locate the perfect property that aligns with your dreams."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preline UI Js -->
+    <script src="assets/libs/preline/preline.js"></script>
+
+    <!-- Theme Js -->
+    <script src="assets/js/theme.js"></script>
+
+</body>
+
+</html>

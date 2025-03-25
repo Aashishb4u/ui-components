@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <title> CreativeHand - Pricing Section Tailwind CSS 3 HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        content="CreativeHand - pricing Section Tailwind CSS 3 HTML Template is a multi purpose landing page template built for any Count Down Web Page, pricing Section, Launching Web, Launching Product Website, agency or business Startup. It’s fully responsive and built Tailwind v3"
+        name="description" />
+    <meta content="Techzaa" name="author" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="#">
+    <link href="./src/output.css" rel="stylesheet">
+
+    <!-- Style css -->
+    <!-- <link href="assets/css/style_pricing.css" rel="stylesheet" type="text/css"> -->
+</head>
+
+
+<body>
+    <!-- Navbar Start -->
+    <div class="flex flex-col">
+        <nav id="nav" class="py-8" role="navigation">
+            <div class="container mx-auto flex flex-wrap items-center md:flex-no-wrap">
+                <a href="#" class="flex items-center">
+                    <img class="w-28 h-16" src="./assets/images/creativehand_logo.png" alt="logo">
+                </a>
+
+            </div>
+        </nav>
+    </div>
+
+    <!-- Section Start -->
+    <section class="section" id="home">
+        <div class="container mx-auto">
+            <div class="lg:flex justify-center">
+                <div class=" mx-2">
+                    <div class="text-center">
+                        <h1
+                            class="text-4xl font-semibold leading-[50px] tracking-wide text-transparent bg-clip-text bg-gradient-to-l from-pink-400 to-blue-600 mb-10">
+                            Pricing Section Tailwind CSS 3 HTML Template
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section End -->
+
+    <!-- shuffle portfolio -->
+    <section class="section pb-16 scroll-mt-5" id="demos">
+        <div class="mx-14">
+            <div class="text-2xl text-center font-semibold mb-10">HTML Demo</div>
+            <div class="grid lg:grid-cols-3 gap-4 justify-center">
+                <div class="mx-auto px-4">
+                    <a href="pricing-1.html" target="_blank">
+                        <img src="assets/images/pricing-demo/img-1.png"
+                            class="rounded border border-gray-100 p-2 bg-white shadow-lg" alt="work-image">
+                    </a>
+                    <h4 class="text-lg text-center mt-5">Pricing 1</h4>
+                </div>
+
+                <div class="mx-auto px-4">
+                    <a href="pricing-2.html" target="_blank">
+                        <img src="assets/images/pricing-demo/img-2.png"
+                            class="rounded border border-gray-100 p-2 bg-white shadow-lg" alt="work-image">
+                    </a>
+                    <h4 class="text-lg text-center mt-5">Pricing 2</h4>
+                </div>
+
+                <div class="mx-auto px-4">
+                    <a href="pricing-3.html" target="_blank">
+                        <img src="assets/images/pricing-demo/img-3.png"
+                            class="rounded border border-gray-100 p-2 bg-white shadow-lg" alt="work-image">
+                    </a>
+                    <h4 class="text-lg text-center mt-5">Pricing 3</h4>
+                </div>
+
+                <div class="mx-auto px-4">
+                    <a href="pricing-4.html" target="_blank">
+                        <img src="assets/images/pricing-demo/img-4.png"
+                            class="rounded border border-gray-100 p-2 bg-white shadow-lg" alt="work-image">
+                    </a>
+                    <h4 class="text-lg text-center mt-5">Pricing 4</h4>
+                </div>
+
+                <div class="mx-auto px-4">
+                    <a href="pricing-5.html" target="_blank">
+                        <img src="assets/images/pricing-demo/img-5.png"
+                            class="rounded border border-gray-100 p-2 bg-white shadow-lg" alt="work-image">
+                    </a>
+                    <h4 class="text-lg text-center mt-5">Pricing 5</h4>
+                </div>
+
+                <div class="mx-auto px-4">
+                    <a href="pricing-6.html" target="_blank">
+                        <img src="assets/images/pricing-demo/img-6.png"
+                            class="rounded border border-gray-100 p-2 bg-white shadow-lg" alt="work-image">
+                    </a>
+                    <h4 class="text-lg text-center mt-5">Pricing 6</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="py-8">
+        <div class="container">
+
+            <div class="flex">
+                <div class="w-full">
+                    <div class="text-center">
+
+                        <p class="text-muted mt-8"> ©
+                            <script>document.write(new Date().getFullYear())</script> CreativeHand. By <a
+                                class="font-medium" href="#">Techzaa</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+        </div>
+    </footer>
+
+    <script>
+
+        //Show and hide hamburguer menu in small screens 
+        const menu = document.getElementById("menu");
+        const ulMenu = document.getElementById("ulMenu");
+
+        function menuToggle() {
+            menu.classList.toggle('navbar-show')
+        }
+
+        // Browser resize listener
+        window.addEventListener("resize", menuResize);
+
+        // Rezise menu if user changing the width with responsive menu opened
+        function menuResize() {
+            // first get the size from the window
+            const window_size = window.innerWidth || document.body.clientWidth;
+            if (window_size > 640) {
+                menu.classList.remove('navbar-show');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
