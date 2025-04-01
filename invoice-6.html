@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> CreativeHand - Tailwind Card HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="CreativeHand - Tailwind Card HTML Template, It’s fully responsive and built Tailwind v3" name="description" />
+    <meta content="CreativeHand" name="author" />
+    <link href="./src/output.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+</head>
+
+<body class="bg-gray-100">
+
+    <section class="py-20 mx-4 md:mx-0 overflow-hidden relative">
+        <div class="inline-block absolute md:end-10 bottom-3 xl:bottom-auto">
+            <a href="javascript:window.print()" class="flex items-center justify-end py-2 px-7 rounded-md bg-white print:hidden">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="pe-1">
+                        <path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+                    </svg>
+                </span>
+                Print
+            </a>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+            <div>
+                <div class="bg-white rounded-t-3xl sm:p-16 p-10">
+                    <div class="flex flex-wrap items-center justify-between gap-6">
+                        <img class="w-36 h-8" src="assets/images/logo-dark.png" alt="">
+                        <div>
+                            <h4 class="text-5xl font-semibold uppercase tracking-widest">Invoice</h4>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap items-center justify-between mt-10">
+                        <div class="flex flex-wrap gap-3">
+                            <h3 class="text-xl font-semibold">Invoice To :</h3>
+                            <div>
+                                <h4 class="text-xl font-semibold">Jack Clark</h4>
+                                <p class="text-sm font-medium text-gray-500 my-1">123 Street, Town City Name <br> State, Country 352</p>
+                            </div>
+                        </div>
+                        <div class="bg-blue-600/10 p-7">
+                            <p class="text-xl font-semibold">Invoice No: <span class="ps-10 text-base text-gray-500">#1234</span></p>
+                            <p class="text-xl font-semibold">Date: <span class="ps-10 text-base text-gray-500">12/09/2020</span></p>
+                        </div>
+                    </div>
+
+                    <div class="overflow-x-auto">
+                        <table class="border-collapse table-auto w-full text-sm mt-14 mb-12 whitespace-pre">
+                            <thead>
+                                <tr>
+                                    <th class="p-4 border-b tracking-widest text-lg font-medium text-start">No.</th>
+                                    <th class="p-4 border-b tracking-widest text-lg font-medium text-start">Item Description</th>
+                                    <th class="p-4 border-b tracking-widest text-lg font-medium text-start">Price</th>
+                                    <th class="p-4 pe-7 border-b tracking-widest text-lg font-medium text-center">Qty</th>
+                                    <th class="p-4 border-b tracking-widest text-lg font-medium text-end">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white">
+                                <tr>
+                                    <td class="p-5 text-base font-medium">1</td>
+                                    <td class="p-5 text-base font-medium">Flyer Design</td>
+                                    <td class="p-5 text-base font-medium">$50</td>
+                                    <td class="p-5 text-base font-medium text-center">1</td>
+                                    <td class="p-5 text-base font-medium text-end">$200</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-5 text-base font-medium">2</td>
+                                    <td class="p-5 text-base font-medium">Brand Logo Design</td>
+                                    <td class="p-5 text-base font-medium">$150</td>
+                                    <td class="p-5 text-base font-medium text-center">2</td>
+                                    <td class="p-5 text-base font-medium text-end">$100</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-5 text-base font-medium">3</td>
+                                    <td class="p-5 text-base font-medium">lilustration Landing Paga</td>
+                                    <td class="p-5 text-base font-medium">$40</td>
+                                    <td class="p-5 text-base font-medium text-center">3</td>
+                                    <td class="p-5 text-base font-medium text-end">$120</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-5 text-base font-medium">4</td>
+                                    <td class="p-5 text-base font-medium">Web Design (UI/UX)</td>
+                                    <td class="p-5 text-base font-medium">$200</td>
+                                    <td class="p-5 text-base font-medium text-center">4</td>
+                                    <td class="p-5 text-base font-medium text-end">$600</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="md:p-20 p-10 bg-blue-600/10 rounded-b-3xl">
+                    <div class="flex flex-wrap items-end justify-between gap-6">
+                        <div>
+                            <p class="w-40 text-xl font-semibold">Payment Method Paypal:</p>
+                            <p class="text-base font-normal mt-4">Jackclark@gmail.com</p>
+                        </div>
+
+                        <div>
+                            <div class="flex items-center justify-end">
+                                <div>
+                                    <h2 class="pb-1 text-base font-medium">Sub Total:</h2>
+                                    <h2 class="pb-2 text-base font-medium">Tax</h2>
+                                    <h2 class="pb-1 pt-2 text-lg font-semibold border-t border-gray-900">Total</h2>
+                                </div>
+                                <div>
+                                    <h4 class="pb-1 ps-12 text-base font-medium text-end">$1000</h4>
+                                    <h4 class="pb-2 ps-12 text-base font-medium text-end">0%</h4>
+                                    <h4 class="pb-1 ps-12 pt-2 text-lg font-semibold text-end border-t border-gray-900">$1000</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap items-center justify-between gap-6">
+                        <div class="max-w-xs mt-12">
+                            <h1 class="text-xl font-semibold">Terms And conditions:</h1>
+                            <p class="text-base font-normal mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                        </div>
+
+                        <div>
+                            <hr class="border-gray-500">
+                            <h4 class="text-lg font-semibold pt-1">singnature</h4>
+                        </div>
+                    </div>
+
+                    <h3 class="md:text-2xl text-lg font-semibold text-center mt-10">Thank You For Your Business</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

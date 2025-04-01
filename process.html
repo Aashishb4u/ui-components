@@ -11,11 +11,29 @@
     <link href="./src/output.css" rel="stylesheet">
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <!-- Style css -->
-    <link href="./assets/css/process_style.css" rel="stylesheet" type="text/css">
+    
 </head>
 
 <body class="font-body">
+    <header class="relative w-full overflow-hidden">
+        <nav id="navbar"
+            class="fixed w-full p-3 transition-all duration-300 z-50 flex items-center justify-between shadow-md bg-white md:px-20 px-8">
+            <a href="#">
+                <img class="h-16 relative z-20" src="assets/images/creativehand_logo.png" alt="logo">
+            </a>
+
+            <button class="lg:hidden" id="menu-toggle">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-7">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+            </button>
+
+        </nav>
+    </header>
     
     <div class="relative">
         <div
@@ -28,12 +46,10 @@
     </div>
 
     <!-- demo start -->
-    <section class="py-20" id="demo">
+    <section class="py-20 mt-5" id="demo">
         <div class="container mx-auto">
             <div class="flex items-center justify-center mb-14">
                 <div class="max-w-2xl text-center">
-                    <span
-                        class="inline-block text-base text-blue-500 font-semibold px-2 rounded bg-blue-500/20 mb-2">Demo</span>
                     <h2 class="text-3xl/snug font-bold capitalize text-gray-800 mb-1">Demo Pages</h2>
                 </div>
             </div>

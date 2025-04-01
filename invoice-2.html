@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> CreativeHand - Tailwind Card HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="CreativeHand - Tailwind Card HTML Template, It’s fully responsive and built Tailwind v3" name="description" />
+    <meta content="CreativeHand" name="author" />
+    <link href="./src/output.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+</head>
+
+<body class="bg-gray-100">
+
+    <section class="py-20 mx-4 md:mx-0 overflow-hidden relative">
+        <div class="inline-block absolute md:end-10 bottom-3 xl:bottom-auto">
+            <a href="javascript:window.print()" class="flex items-center justify-end py-2 px-7 rounded-md bg-white print:hidden">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="pe-1">
+                        <path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+                    </svg>
+                </span>
+                Print
+            </a>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+            <div class="rounded-3xl bg-white md:p-16 p-10 print:p-0 print:bg-black">
+                <div class="flex flex-wrap items-center justify-between gap-6">
+                    <img class="w-36 h-8" src="assets/images/logo-dark.png" alt="">
+                    <div>
+                        <h4 class="text-lg font-medium uppercase tracking-widest">Invoice #</h4>
+                        <p class="text-lg float-rights font-medium tracking-widest">00000A</p>
+                    </div>
+                </div>
+
+                <div class="mt-10">
+                    <h1 class="text-xl font-semibold uppercase tracking-widest">Deslge project name</h1>
+
+                    <h4 class="text-lg font-medium uppercase tracking-widest mt-10">Billing To:</h4>
+                    <p class="w-52 text-base font-normal tracking-widest">Client's name Street Avenue 10019 Miami, fl</p>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="border-collapse table-auto w-full text-sm mt-14 mb-12 whitespace-pre">
+                        <thead>
+                            <tr class=" bg-black">
+                                <th class="p-4 border-b uppercase tracking-widest text-xl font-medium text-start text-white">Product</th>
+                                <th class="p-4 border-b uppercase tracking-widest text-xl font-medium text-start text-white">Price</th>
+                                <th class="p-4 pe-7 border-b uppercase tracking-widest text-xl font-medium text-center text-white">Qty</th>
+                                <th class="p-4 border-b uppercase tracking-widest text-xl font-medium text-end text-white">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white">
+                            <tr>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800">Logo design</td>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800">$50.00</td>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800 text-center">1</td>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800 text-end">$150.00</td>
+                            </tr>
+                            <tr>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800">Brand identity</td>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800">$100.00</td>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800 text-center">2</td>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800 text-end">$1000.00</td>
+                            </tr>
+                            <tr>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800">Website design</td>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800">$50.00</td>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800 text-center">3</td>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800 text-end">$500.00</td>
+                            </tr>
+                            <tr>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800">Stationery design</td>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800">$170.00</td>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800 text-center">4</td>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800 text-end">$0.00</td>
+                            </tr>
+                            <tr>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800">Updatings</td>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800">$30.00</td>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800 text-center">5</td>
+                                <td class="p-5 text-lg font-medium border-b border-gray-800 text-end">$380.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="p-5 text-lg font-medium text-end"><b class="uppercase">Sub total</b> $0.00 <br> <b class="uppercase pe-14">Tax</b> $0.00 <br><b class="uppercase pe-10">Total</b> $0.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="md:max-w-3xl">
+                    <h1 class="text-xl font-semibold uppercase tracking-widest">Terms & conditions:</h1>
+                    <p class="text-base font-medium mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation uilamco laboris nisi ut aliquip ex ea luptatem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

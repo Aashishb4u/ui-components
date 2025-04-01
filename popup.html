@@ -27,7 +27,26 @@
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="78">
 
+    <header class="relative w-full overflow-hidden">
+        <nav id="navbar"
+            class="fixed w-full p-3 transition-all duration-300 z-50 flex items-center justify-between shadow-md bg-white md:px-20 px-8">
+            <a href="#">
+                <img class="h-16 relative z-20" src="assets/images/creativehand_logo.png" alt="logo">
+            </a>
 
+            <button class="lg:hidden" id="menu-toggle">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-7">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+            </button>
+
+        </nav>
+    </header>
+    
     <section class="section bg-body-tertiary" id="home">
         <div class="container">
             <div class="row justify-content-center">

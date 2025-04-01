@@ -12,31 +12,39 @@
     <link rel="shortcut icon" href="#">
     <link href="./src/output.css" rel="stylesheet">
 
-    <!-- Style css -->
-    <link href="assets/css/style_service.css" rel="stylesheet" type="text/css">
+    
 </head>
 
 
 <body>
-    <!-- Navbar Start -->
-    <div class="flex flex-col">
-        <nav id="nav" class="py-8 md:border-b-0 border-b" role="navigation">
-            <div class="container mx-auto flex flex-wrap items-center md:flex-no-wrap">
-                <a href="#" class="flex items-center">
-                    <img class="w-28 h-16" src="./assets/images/creativehand_logo.png" alt="logo">
-                </a>
-                
-            </div>
-        </nav>
-    </div>
+    <header class="relative w-full overflow-hidden">
+        <nav id="navbar"
+            class="fixed w-full p-3 transition-all duration-300 z-50 flex items-center justify-between shadow-md bg-white md:px-20 px-8">
+            <a href="#">
+                <img class="h-16 relative z-20" src="assets/images/creativehand_logo.png" alt="logo">
+            </a>
 
+            <button class="lg:hidden" id="menu-toggle">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-7">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+            </button>
+
+        </nav>
+    </header>
+    <!-- Navbar Start -->
+    
     <!-- Section Start -->
     <section class="section" id="home">
         <div class="container mx-auto">
             <div class="lg:flex justify-center">
                 <div class=" mx-2">
                     <div class="text-center">
-                        <h1 class="text-4xl font-semibold leading-[50px] tracking-wide text-transparent bg-clip-text bg-gradient-to-l from-pink-400 to-blue-600  md:mb-10">
+                        <h1 class="text-4xl font-semibold leading-[50px] tracking-wide text-transparent bg-clip-text bg-gradient-to-l from-pink-400 to-blue-600  md:mb-16 bg-gray-700">
                             Service Section Tailwind CSS 3 HTML Template 
                         </h1>
                     </div>
@@ -49,7 +57,7 @@
     <!-- shuffle portfolio -->
     <section class="section pb-16 scroll-mt-5" id="demos">
         <div class="md:mx-14">
-            <div class="text-2xl text-center font-semibold mb-10">HTML Demo</div>
+            <div class="text-2xl text-center font-semibold mb-10 mt-4">HTML Demo</div>
             <div class="grid lg:grid-cols-3 gap-4 justify-center">
                 <div class="mx-auto px-4">
                     <a href="services-1.html" target="_blank">
@@ -119,6 +127,13 @@
                         <img src="assets/images/demo/img-10.png" class="rounded border border-gray-100 p-2 bg-white shadow-lg" alt="work-image">
                     </a>
                     <h4 class="text-lg text-center mt-5">Service 10</h4>
+                </div>
+                
+                <div class="mx-auto px-4">
+                    <a href="services-11.html" target="_blank">
+                        <img src="assets/images/demo/img-11.png" class="rounded border border-gray-100 p-2 bg-white shadow-lg" alt="work-image">
+                    </a>
+                    <h4 class="text-lg text-center mt-5">Service 11</h4>
                 </div>
                 
             </div>
