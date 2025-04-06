@@ -2,87 +2,108 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title> TechSlider - Hero Slider Tailwind CSS 3 HTML Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="TechSlider - Hero Slider Tailwind CSS 3 HTML Template, It’s fully responsive and built Tailwind v3" name="description" />
-    <meta content="Techzaa" name="author" />
-    <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <meta charset="utf-8" />
+  <title>TechSlider - Hero Slider Tailwind CSS 3 HTML Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="TechSlider - Hero Slider Tailwind CSS 3 HTML Template, It’s fully responsive and built Tailwind v3" name="description" />
+  <meta content="Techzaa" name="author" />
 
-    <!-- remixicon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- remixicon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!-- Style css -->
-    <link href="assets/css/hero_style.css" rel="stylesheet" type="text/css">
+  <!-- Style css -->
+  <link href="assets/css/hero_style.css" rel="stylesheet" type="text/css" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+        },
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    });
+  </script>
 </head>
 
 <body>
+  <section class="relative py-20 sm:py-40 2xl:h-screen 2xl:overflow-hidden">
+    <div class="flex items-center text-white">
+      <div class="container mx-auto">
+        <div class="absolute inset-0 -z-10">
+          <!-- Swiper -->
+          <div id="testi_3" class="swiper bg-cover bg-center">
+            <div class="swiper-wrapper relative">
+              <div class="swiper-slide">
+                <img src="assets/images/swiper/img-1.jpg" class="2xl:h-[970px] h-[900px] w-full" alt="" />
+                <div class="absolute inset-0 bg-gray-950/70"></div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/swiper/img-2.jpg" class="2xl:h-[970px] h-[900px] w-full" alt="" />
+                <div class="absolute inset-0 bg-gray-950/70"></div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/swiper/img-3.jpg" class="2xl:h-[970px] h-[900px] w-full" alt="" />
+                <div class="absolute inset-0 bg-gray-950/70"></div>
+              </div>
+            </div>
 
-    <section class="relative py-20 sm:py-40 2xl:h-screen 2xl:overflow-hidden">
-        <div class="flex items-center text-white">
+            <!-- Optional Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
 
-            <div class="container mx-auto">
-                <div class="absolute inset-0 -z-10">
-                    <!-- Swiper -->
-                    <div id="testi_3" class="swiper bg-cover bg-center">
-                        <div class="swiper-wrapper relative">
-                            <div class="swiper-slide">
-                                <img src="assets/images/swiper/img-1.jpg" class="2xl:h-[970px] h-[900px] w-full" alt="">
-                                <div class="absolute inset-0 bg-gray-950/70"></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="assets/images/swiper/img-2.jpg" class="2xl:h-[970px] h-[900px] w-full" alt="">
-                                <div class="absolute inset-0 bg-gray-950/70"></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="assets/images/swiper/img-3.jpg" class="2xl:h-[970px] h-[900px] w-full" alt="">
-                                <div class="absolute inset-0 bg-gray-950/70"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative max-w-2xl pt-40">
-                    <h1 class="2xl:text-[55px]/tight md:text-5xl/tight text-4xl/tight font-medium tracking-wide mb-8">Our Best Collections For You
-                        <span class="relative lg:font-semibold lg:after:content[''] lg:after:w-[140px] lg:after:h-[1px] lg:after:bg-white/75 lg:after:absolute lg:after:top-2/3 lg:after:left-[25px]"></span>
-                    </h1>
-
-                    <div class="mb-8">
-                        <div class="flex items-center gap-5">
-
-                            <div class="flex items-center gap-2">
-                                <i class="ri-star-fill text-lg text-yellow-300"></i>
-                                <i class="ri-star-fill text-lg text-yellow-300"></i>
-                                <i class="ri-star-fill text-lg text-yellow-300"></i>
-                                <i class="ri-star-fill text-lg text-yellow-300"></i>
-                                <i class="ri-star-half-line text-lg text-yellow-300"></i>
-                            </div>
-
-                            <span class="text-xl">4.3 (400)</span>
-
-                        </div>
-                    </div>
-
-                    <p class="text-base/relaxed text-white/60">These cases are perfectly simple and easy to distinguish. In a free hour when our power of choice is untrammelled and when nothing prevents our being able to do what we like best every pleasure.</p>
-                </div>
-
-                <div class="2xl:pt-64 pt-56 mt-6">
-                    <div class="pagination"></div>
-                </div>
-            </div><!-- Container End -->
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
-    </section>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <div class="relative max-w-2xl pt-40">
+          <h1 class="2xl:text-[55px]/tight md:text-5xl/tight text-4xl/tight font-medium tracking-wide mb-8">
+            Our Best Collections For You
+            <span class="relative lg:font-semibold lg:after:content[''] lg:after:w-[140px] lg:after:h-[1px] lg:after:bg-white/75 lg:after:absolute lg:after:top-2/3 lg:after:left-[25px]"></span>
+          </h1>
 
-    <!-- Theme Js -->
-    <script src="assets/js/theme.min.js"></script>
+          <div class="mb-8">
+            <div class="flex items-center gap-5">
+              <div class="flex items-center gap-2">
+                <i class="ri-star-fill text-lg text-yellow-300"></i>
+                <i class="ri-star-fill text-lg text-yellow-300"></i>
+                <i class="ri-star-fill text-lg text-yellow-300"></i>
+                <i class="ri-star-fill text-lg text-yellow-300"></i>
+                <i class="ri-star-half-line text-lg text-yellow-300"></i>
+              </div>
+              <span class="text-xl">4.3 (400)</span>
+            </div>
+          </div>
 
+          <p class="text-base/relaxed text-white/60">
+            These cases are perfectly simple and easy to distinguish. In a free hour when our power of choice is untrammelled and when nothing prevents our being able to do what we like best every pleasure.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Theme JS -->
+  <script src="assets/js/theme.min.js"></script>
 </body>
 
 </html>
