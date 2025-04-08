@@ -4,63 +4,69 @@
 <head>
     <meta charset="utf-8" />
     <title>CreativeHand - UI Components</title>
-    <link href="./src/output.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Techsoon - Coming Soon Tailwind CSS 3 HTML Template is a multi purpose landing page template built for any Count Down Web Page, Coming Soon Page, Launching Web, Launching Product Website, agency or business Startup. It’s fully responsive and built Tailwind v3" name="description" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+        content="Techsoon - Coming Soon Tailwind CSS 3 HTML Template is a multi purpose landing page template built for any Count Down Web Page, Coming Soon Page, Launching Web, Launching Product Website, agency or business Startup. It’s fully responsive and built Tailwind v3"
+        name="description" />
     <meta content="Techzaa" name="author" />
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
-    <!-- Style css -->
-    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css">
+    <!-- ✅ Font Awesome for social icons -->
+    <!-- Font Awesome Free CDN (works without account) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Icons css -->
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
 </head>
 
-<body class="bg-slate-100 tracking-wide">
-
+<body class="bg-slate-100 tracking-wide overflow-hidden">
     <!-- Home Start -->
-    <section class="py-20 relative md:h-screen flex items-center px-6" id="home">
+    <section class="relative h-screen flex items-center px-6" id="home">
         <div class="overflow-hidden">
-            <img class="absolute inset-0 h-full w-full object-cover" src="assets/images/1.jpg" alt="build your website image">
+            <img class="absolute inset-0 h-screen w-full object-cover" src="assets/images/1.jpg"
+                alt="build your website image" />
             <div class="absolute inset-0 w-full h-full bg-gradient-to-b from-neutral-800/70 to-slate-900/80"></div>
         </div>
 
-        <div class="container">
+        <div class="container mx-auto">
             <div class="flex items-center justify-center relative">
-                <div class="max-w-xl text-center text-white py-20">
-                    <a href="#" class="flex justify-center mx-auto mb-12"><img src="assets/images/logo.png" alt="logo" class="h-12"></a>
-                    <h2 class="text-4xl mb-7">We Are Coming Soon...</h2>
-                    <p class="text-neutral-300">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                <div class="max-w-xl text-center text-white py-8 md:py-12">
+                    <a href="#" class="flex justify-center mx-auto mb-6"><img src="assets/images/logo.png" alt="logo"
+                            class="h-12" /></a>
+                    <h2 class="text-xl md:text-4xl mb-7">We Are Coming Soon...</h2>
+                    <p class="text-neutral-300 text-base">
+                        Start working with Techwind that can provide everything you need
+                        to generate awareness, drive traffic, connect.
+                    </p>
                     <div>
-                        <div class="my-10 text-white p z-30">
+                        <div class="my-10 text-white z-30">
                             <div class="flex flex-wrap items-center justify-center gap-5">
-                                <div class="h-32 w-32 bg-neutral-500/30 rounded-full flex items-center justify-center">
+                                <div class="md:h-32 md:w-32 h-22 w-22 bg-neutral-500/30 rounded-full flex items-center justify-center">
                                     <div class="text-center">
-                                        <span id="days" class="text-3xl lg:text-4xl"></span>
+                                        <span id="days" class="text-2xl lg:text-4xl">0</span>
                                         <p>days</p>
                                     </div>
                                 </div>
 
-                                <div class="h-32 w-32 bg-neutral-500/30 rounded-full flex items-center justify-center">
+                                <div class="md:h-32 md:w-32 h-22 w-22 bg-neutral-500/30 rounded-full flex items-center justify-center">
                                     <div class="text-center">
-                                        <span id="hours" class="text-3xl lg:text-4xl"></span>
+                                        <span id="hours" class="text-3xl lg:text-4xl">0</span>
                                         <p>Hours</p>
                                     </div>
                                 </div>
 
-                                <div class="h-32 w-32 bg-neutral-500/30 rounded-full flex items-center justify-center">
+                                <div class="md:h-32 md:w-32 h-22 w-22 bg-neutral-500/30 rounded-full flex items-center justify-center">
                                     <div class="text-center">
-                                        <span id="minutes" class="text-3xl lg:text-4xl"></span>
+                                        <span id="minutes" class="text-3xl lg:text-4xl">0</span>
                                         <p>Minutes</p>
                                     </div>
                                 </div>
 
-                                <div class="h-32 w-32 bg-neutral-500/30 rounded-full flex items-center justify-center">
+                                <div class="md:h-32 md:w-32 h-22 w-22 bg-neutral-500/30 rounded-full flex items-center justify-center">
                                     <div class="text-center">
-                                        <span id="seconds" class="text-3xl lg:text-4xl"></span>
+                                        <span id="seconds" class="text-3xl lg:text-4xl">0</span>
                                         <p>Seconds</p>
                                     </div>
                                 </div>
@@ -70,43 +76,68 @@
                 </div>
             </div>
 
-            <div class="opacity-75 pt-20">
+            <div class="opacity-75">
                 <div class="flex items-center justify-center gap-4">
                     <a href="#">
                         <div class="w-10 h-10 bg-neutral-500/50 rounded-full flex items-center justify-center">
-                            <i class="fa-brands fa-facebook-f text-green-500 hover:text-emerald-400 text-xl"></i>
+                            <i class="fab fa-facebook-f text-green-500 hover:text-emerald-400 text-xl"></i>
                         </div>
                     </a>
                     <a href="#">
                         <div class="w-10 h-10 bg-neutral-500/50 rounded-full flex items-center justify-center">
-                            <i class="fa-brands fa-instagram text-green-500 hover:text-emerald-400 text-xl"></i>
+                            <i class="fab fa-instagram text-green-500 hover:text-emerald-400 text-xl"></i>
                         </div>
                     </a>
                     <a href="#">
                         <div class="w-10 h-10 bg-neutral-500/50 rounded-full flex items-center justify-center">
-                            <i class="fa-brands fa-twitter text-green-500 hover:text-emerald-400 text-xl"></i>
+                            <i class="fab fa-twitter text-green-500 hover:text-emerald-400 text-xl"></i>
                         </div>
                     </a>
                     <a href="#">
                         <div class="w-10 h-10 bg-neutral-500/50 rounded-full flex items-center justify-center">
-                            <i class="fa-brands fa-youtube text-green-500 hover:text-emerald-400 text-xl"></i>
+                            <i class="fab fa-youtube text-green-500 hover:text-emerald-400 text-xl"></i>
                         </div>
                     </a>
+
                 </div>
-                <p class="text-white text-center pt-7"> ©
-                    <script>document.write(new Date().getFullYear())</script>
-                    Design with <i class="fa-solid fa-heart text-red-500"></i>
-                    <a href="#"> by Techzaa.</a>
+                <p class="text-white text-center pt-7">
+                    ©
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    Design with <i class="fas fa-heart text-red-500"></i>
+                    <a href="#"> by CreativeHand.</a>
                 </p>
             </div>
-
         </div>
     </section>
-    <!-- Home Start -->
+    <!-- Home End -->
 
-    <!-- Theme Js -->
-    <script src="assets/js/theme.js"></script>
+    <!-- ✅ Countdown Timer Script -->
+    <script>
+        const targetDate = new Date("2026-07-29T00:00:00").getTime();
 
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance < 0) return;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor(
+                (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            );
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script>
 </body>
 
 </html>

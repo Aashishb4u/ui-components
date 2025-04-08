@@ -3,25 +3,50 @@
 
 <head>
     <meta charset="utf-8" />
-    <title> TechSlider - Hero Slider Tailwind CSS 3 HTML Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="TechSlider - Hero Slider Tailwind CSS 3 HTML Template, It’s fully responsive and built Tailwind v3" name="description" />
+    <title>CreativeHand - Hero Slider Tailwind CSS 3 HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="CreativeHand - Hero Slider Tailwind CSS 3 HTML Template, It’s fully responsive and built Tailwind v3"
+        name="description" />
     <meta content="Techzaa" name="author" />
+
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
     <!-- remixicon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
 
     <!-- Style css -->
-    <link href="assets/css/hero_style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/hero_style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const swiper = new Swiper('.swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                },
+                slidesPerView: 1,
+                spaceBetween: 20,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <section class="overflow-hidden 2xl:h-screen">
+    <section class="relative h-screen w-full  bg-cover ">
         <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;" class="swiper mySwiper2">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -47,24 +72,33 @@
 
                 <div class="2xl:ps-60 ps-20 pe-10 max-w-4xl">
                     <span class="text-base font-normal text-white">Featured Article</span>
-                    <h1 class="2xl:text-4xl/tight md:text-5xl/tight text-4xl/tight font-semibold tracking-wide text-white mb-10 mt-5">Five hiking trails that will make you wish you lived in LA </h1>
+                    <h1
+                        class="2xl:text-4xl/tight md:text-5xl/tight text-4xl/tight font-semibold tracking-wide text-white mb-10 mt-5">
+                        Five hiking trails that will make you wish you lived in LA </h1>
 
-                    <a href="#" class="text-base font-medium flex items-center gap-2 text-white hover:text-blue-600 transition-all duration-500">Read More <i class="ri-arrow-right-s-line text-xl"></i></a>
+                    <a href="#"
+                        class="text-base font-medium flex items-center gap-2 text-white hover:text-blue-600 transition-all duration-500">Read
+                        More <i class="ri-arrow-right-s-line text-xl"></i></a>
                 </div>
 
                 <div class="swiper-wrapper pt-80">
                     <div class="swiper-slide">
                         <div class="p-10 flex items-center gap-6 rounded-md text-white bg-white/30 backdrop-blur-[3px]">
                             <div>
-                                <h2 class="text-lg font-medium rounded-md rotate-45 border w-10 h-10 flex items-center justify-center"><span class="-rotate-45">1</span></h2>
+                                <h2
+                                    class="text-lg font-medium rounded-md rotate-45 border w-10 h-10 flex items-center justify-center">
+                                    <span class="-rotate-45">1</span></h2>
                             </div>
-                            <h3 class="text-base font-medium">Five haling tralls that will make you wish you thed in LA</h3>
+                            <h3 class="text-base font-medium">Five haling tralls that will make you wish you thed in LA
+                            </h3>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="p-10 flex items-center gap-6 rounded-md text-white bg-white/30 backdrop-blur-[3px]">
                             <div>
-                                <h2 class="text-lg font-medium rounded-md rotate-45 border w-10 h-10 flex items-center justify-center"><span class="-rotate-45">2</span></h2>
+                                <h2
+                                    class="text-lg font-medium rounded-md rotate-45 border w-10 h-10 flex items-center justify-center">
+                                    <span class="-rotate-45">2</span></h2>
                             </div>
                             <h3 class="text-base font-medium">Paradise for pennses: our tales of budget billss</h3>
                         </div>
@@ -72,7 +106,9 @@
                     <div class="swiper-slide">
                         <div class="p-10 flex items-center gap-6 rounded-md text-white bg-white/30 backdrop-blur-[3px]">
                             <div>
-                                <h2 class="text-lg font-medium rounded-md rotate-45 border w-10 h-10 flex items-center justify-center"><span class="-rotate-45">3</span></h2>
+                                <h2
+                                    class="text-lg font-medium rounded-md rotate-45 border w-10 h-10 flex items-center justify-center">
+                                    <span class="-rotate-45">3</span></h2>
                             </div>
                             <h3 class="text-base font-medium">Where to go in <br> May</h3>
                         </div>
@@ -80,7 +116,9 @@
                     <div class="swiper-slide">
                         <div class="p-10 flex items-center gap-6 rounded-md text-white bg-white/30 backdrop-blur-[3px]">
                             <div>
-                                <h2 class="text-lg font-medium rounded-md rotate-45 border w-10 h-10 flex items-center justify-center"><span class="-rotate-45">4</span></h2>
+                                <h2
+                                    class="text-lg font-medium rounded-md rotate-45 border w-10 h-10 flex items-center justify-center">
+                                    <span class="-rotate-45">4</span></h2>
                             </div>
                             <h3 class="text-base font-medium">10 islands for <br> romasce</h3>
                         </div>

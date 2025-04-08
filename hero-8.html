@@ -3,26 +3,50 @@
 
 <head>
     <meta charset="utf-8" />
-    <title> TechSlider - Hero Slider Tailwind CSS 3 HTML Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="TechSlider - Hero Slider Tailwind CSS 3 HTML Template, It’s fully responsive and built Tailwind v3" name="description" />
+    <title>CreativeHand - Hero Slider Tailwind CSS 3 HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="CreativeHand - Hero Slider Tailwind CSS 3 HTML Template, It’s fully responsive and built Tailwind v3"
+        name="description" />
     <meta content="Techzaa" name="author" />
+
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
     <!-- remixicon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
 
     <!-- Style css -->
-    <link href="assets/css/hero_style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/hero_style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const swiper = new Swiper('.swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                },
+                slidesPerView: 1,
+                spaceBetween: 20,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
 </head>
 
 <body>
-
-    <section class="relative py-20 sm:py-40 2xl:h-screen 2xl:overflow-hidden">
+    <section class="relative h-screen w-full  bg-cover ">
         <div class="flex items-center text-white">
 
             <div class="container">
@@ -31,19 +55,23 @@
                     <div id="testi_6" class="swiper bg-cover bg-center">
                         <div class="swiper-wrapper relative">
                             <div class="swiper-slide">
-                                <img src="assets/images/swiper/img-31.jpg" class="2xl:h-[970px] h-[970px] w-full" alt="">
+                                <img src="assets/images/swiper/img-31.jpg" class="2xl:h-[970px] h-[970px] w-full"
+                                    alt="">
                                 <div class="absolute inset-0 bg-gray-950/70"></div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/swiper/img-29.jpg" class="2xl:h-[970px] h-[970px] w-full" alt="">
+                                <img src="assets/images/swiper/img-29.jpg" class="2xl:h-[970px] h-[970px] w-full"
+                                    alt="">
                                 <div class="absolute inset-0 bg-gray-950/70"></div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/swiper/img-28.jpg" class="2xl:h-[970px] h-[970px] w-full" alt="">
+                                <img src="assets/images/swiper/img-28.jpg" class="2xl:h-[970px] h-[970px] w-full"
+                                    alt="">
                                 <div class="absolute inset-0 bg-gray-950/70"></div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/swiper/img-27.jpg" class="2xl:h-[970px] h-[970px] w-full" alt="">
+                                <img src="assets/images/swiper/img-27.jpg" class="2xl:h-[970px] h-[970px] w-full"
+                                    alt="">
                                 <div class="absolute inset-0 bg-gray-950/70"></div>
                             </div>
                         </div>
@@ -51,15 +79,20 @@
                 </div>
 
                 <div class="relative max-w-2xl pt-40">
-                    <h1 class="2xl:text-[55px]/tight md:text-5xl/tight text-4xl/tight font-medium tracking-wide mb-8">Let's Read Together Together</h1>
-                    <p class="text-base/relaxed text-white/60">Let your child open the magic worid of books, full of good miracles, bright adventures, brave heroes and real friendship.</p>
+                    <h1 class="2xl:text-[55px]/tight md:text-5xl/tight text-4xl/tight font-medium tracking-wide mb-8">
+                        Let's Read Together Together</h1>
+                    <p class="text-base/relaxed text-white/60">Let your child open the magic worid of books, full of
+                        good miracles, bright adventures, brave heroes and real friendship.</p>
 
                     <div class="lg:flex items-center gap-5 rounded shadow-sm p-2 border bg-white mt-10">
                         <div class="sm:flex items-center justify-between w-full">
                             <div class="flex w-full items-center ">
-                                <input type="email" id="hero-input" name="hero-input" class="border-0 w-full text-blue-600 focus:ring-0 bg-transparent" placeholder="Your email">
+                                <input type="email" id="hero-input" name="hero-input"
+                                    class="border-0 w-full text-blue-600 focus:ring-0 bg-transparent"
+                                    placeholder="Your email">
                             </div>
-                            <button class="flex items-center justify-center gap-3 w-full sm:w-72 py-4 text-white text-xl duration-300 rounded bg-blue-600 hover:bg-blue-600/90">
+                            <button
+                                class="flex items-center justify-center gap-3 w-full sm:w-72 py-4 text-white text-xl duration-300 rounded bg-blue-600 hover:bg-blue-600/90">
                                 <span class="uppercase">send</span>
                             </button>
                         </div>
@@ -68,21 +101,26 @@
 
                 <div class="flex flex-wrap items-center justify-between 2xl:pt-48 pt-56 mt-6">
                     <div class="flex items-center gap-2">
-                        <div class="border rounded-full w-10 h-10 flex items-center justify-center hover:border-blue-600 hover:text-blue-600 transition-all duration-500">
+                        <div
+                            class="border rounded-full w-10 h-10 flex items-center justify-center hover:border-blue-600 hover:text-blue-600 transition-all duration-500">
                             <i class="ri-facebook-fill text-2xl"></i>
                         </div>
-                        <div class="border rounded-full w-10 h-10 flex items-center justify-center hover:border-pink-600 hover:text-pink-600 transition-all duration-500">
+                        <div
+                            class="border rounded-full w-10 h-10 flex items-center justify-center hover:border-pink-600 hover:text-pink-600 transition-all duration-500">
                             <i class="ri-instagram-line text-2xl"></i>
                         </div>
-                        <div class="border rounded-full w-10 h-10 flex items-center justify-center hover:border-red-500 hover:text-red-500 transition-all duration-500">
+                        <div
+                            class="border rounded-full w-10 h-10 flex items-center justify-center hover:border-red-500 hover:text-red-500 transition-all duration-500">
                             <i class="ri-youtube-fill text-2xl"></i>
                         </div>
                     </div>
 
                     <div class="flex items-center justify-center">
                         <div class="button-next after:hidden group">
-                            <div class="relative border-8 border-transparent hover:border-white/5 rounded-lg transition-all duration-500">
-                                <div class="w-9 h-9 flex items-center justify-center border rounded-md text-white border-gray-700 hover:border-transparent bg-gray-700/50 hover:bg-white hover:text-blue-600 transition-all duration-500">
+                            <div
+                                class="relative border-8 border-transparent hover:border-white/5 rounded-lg transition-all duration-500">
+                                <div
+                                    class="w-9 h-9 flex items-center justify-center border rounded-md text-white border-gray-700 hover:border-transparent bg-gray-700/50 hover:bg-white hover:text-blue-600 transition-all duration-500">
                                     <div class="">
                                         <i class="ri-arrow-left-s-line text-2xl"></i>
                                     </div>
@@ -90,8 +128,10 @@
                             </div>
                         </div>
                         <div class="button-prev after:hidden">
-                            <div class="relative border-8 border-transparent hover:border-white/5 rounded-lg transition-all duration-500">
-                                <div class="w-9 h-9 flex items-center justify-center border rounded-md text-white border-gray-700 hover:border-transparent bg-gray-700/50  hover:bg-white hover:text-blue-600 transition-all duration-500">
+                            <div
+                                class="relative border-8 border-transparent hover:border-white/5 rounded-lg transition-all duration-500">
+                                <div
+                                    class="w-9 h-9 flex items-center justify-center border rounded-md text-white border-gray-700 hover:border-transparent bg-gray-700/50  hover:bg-white hover:text-blue-600 transition-all duration-500">
                                     <div class="">
                                         <i class="ri-arrow-right-s-line text-2xl"></i>
                                     </div>

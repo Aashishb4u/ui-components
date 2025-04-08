@@ -3,43 +3,70 @@
 
 <head>
     <meta charset="utf-8" />
-    <title> TechSlider - Hero Slider Tailwind CSS 3 HTML Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="TechSlider - Hero Slider Tailwind CSS 3 HTML Template, It’s fully responsive and built Tailwind v3" name="description" />
+    <title>CreativeHand - Hero Slider Tailwind CSS 3 HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="CreativeHand - Hero Slider Tailwind CSS 3 HTML Template, It’s fully responsive and built Tailwind v3"
+        name="description" />
     <meta content="Techzaa" name="author" />
+
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
     <!-- remixicon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
 
     <!-- Style css -->
-    <link href="assets/css/hero_style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/hero_style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const swiper = new Swiper('.swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                },
+                slidesPerView: 1,
+                spaceBetween: 20,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
 </head>
 
 <body>
-
-    <section class="relative py-32 2xl:h-screen overflow-hidden">
+    <section class="relative h-screen w-full bg-cover ">
         <div class="flex items-center text-white">
 
-            <div class="container">
+            <div class="container mx-auto">
                 <div class="absolute inset-0 -z-10">
                     <!-- Swiper -->
                     <div id="slider_5" class="swiper bg-cover">
                         <div class="swiper-wrapper relative">
                             <div class="swiper-slide">
-                                <img src="assets/images/swiper/home-1.jpg" class="2xl:h-[970px] h-[900px] w-full" alt="">
+                                <img src="assets/images/swiper/home-1.jpg" class="2xl:h-[970px] h-screen w-full"
+                                    alt="">
                                 <div class="absolute inset-0 bg-gray-950/70"></div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/swiper/home-2.jpg" class="2xl:h-[970px] h-[900px] w-full" alt="">
+                                <img src="assets/images/swiper/home-2.jpg" class="2xl:h-[970px] h-screen w-full"
+                                    alt="">
                                 <div class="absolute inset-0 bg-gray-950/70"></div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/swiper/home-3.jpg" class="2xl:h-[970px] h-[900px] w-full" alt="">
+                                <img src="assets/images/swiper/home-3.jpg" class="2xl:h-[970px] h-screen w-full"
+                                    alt="">
                                 <div class="absolute inset-0 bg-gray-950/70"></div>
                             </div>
                         </div>
@@ -52,8 +79,10 @@
                     <i class="ri-arrow-left-s-line text-3xl"></i>
                 </div>
 
-                <div class="relative max-w-2xl mx-auto sm:pt-[650px] pt-[600px]">
-                    <p class="text-base/relaxed text-white/60 text-center mb-12">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atqued corrupti quos dolores et quas molestias excepturi sintoccaecati cupiditate.</p>
+                <div class="relative max-w-2xl mx-auto pt-80">
+                    <p class="text-base/relaxed text-white/60 text-center">At vero eos et accusamus et iusto odio
+                        dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atqued corrupti quos dolores
+                        et quas molestias excepturi sintoccaecati cupiditate.</p>
                 </div>
             </div><!-- Container End -->
         </div>

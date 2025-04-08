@@ -3,34 +3,61 @@
 
 <head>
     <meta charset="utf-8" />
-    <title> TechSlider - Hero Slider Tailwind CSS 3 HTML Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="TechSlider - Hero Slider Tailwind CSS 3 HTML Template, It’s fully responsive and built Tailwind v3" name="description" />
+    <title>CreativeHand - Hero Slider Tailwind CSS 3 HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="CreativeHand - Hero Slider Tailwind CSS 3 HTML Template, It’s fully responsive and built Tailwind v3"
+        name="description" />
     <meta content="Techzaa" name="author" />
+
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
     <!-- remixicon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
 
     <!-- Style css -->
-    <link href="assets/css/hero_style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/hero_style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const swiper = new Swiper('.swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                },
+                slidesPerView: 1,
+                spaceBetween: 20,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
 </head>
 
 <body>
-
-    <section class="overflow-hidden 2xl:h-screen">
+    <section class="relative h-screen w-full  bg-cover ">
         <div class="grid md:grid-cols-2 grid-cols-1 gap-5 items-center ">
             <div class="lg:p-20 p-5">
                 <div class="max-w-md mx-auto">
                     <h2 class="md:text-5xl/normal text-3xl font-semibold ">Building the future of Al together</h2>
-                    <p class="text-base font-medium  mt-10 mb-14">Al is transforming the world. and we are leading the charge. We are constructing the future of al as a collective.</p>
+                    <p class="text-base font-medium  mt-10 mb-14">Al is transforming the world. and we are leading the
+                        charge. We are constructing the future of al as a collective.</p>
                 </div>
                 <div class="inline-block xl:ms-40">
-                    <a href="#" class="py-3 px-8 rounded-full flex items-center gap-3 text-white bg-blue-600 hover:bg-blue-600/80 transition-all duration-500">Get Started <i class="ri-arrow-right-line"></i></a>
+                    <a href="#"
+                        class="py-3 px-8 rounded-full flex items-center gap-3 text-white bg-blue-600 hover:bg-blue-600/80 transition-all duration-500">Get
+                        Started <i class="ri-arrow-right-line"></i></a>
                 </div>
 
                 <div class="flex flex-wrap items-center xl:justify-center gap-6 pb-5 mt-24">
@@ -79,7 +106,7 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

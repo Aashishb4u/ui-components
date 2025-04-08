@@ -3,19 +3,22 @@
 
 <head>
     <meta charset="utf-8" />
-    <title> Techsoon - Coming Soon HTML Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Techsoon - Coming Soon Tailwind CSS 3 HTML Template is a multi purpose landing page template built for any Count Down Web Page, Coming Soon Page, Launching Web, Launching Product Website, agency or business Startup. It’s fully responsive and built Tailwind v3" name="description" />
+    <title>CreativeHand - UI Components</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+        content="Techsoon - Coming Soon Tailwind CSS 3 HTML Template is a multi purpose landing page template built for any Count Down Web Page, Coming Soon Page, Launching Web, Launching Product Website, agency or business Startup. It’s fully responsive and built Tailwind v3"
+        name="description" />
     <meta content="Techzaa" name="author" />
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
-    <!-- Style css -->
-    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css">
+    <!-- ✅ Font Awesome for social icons -->
+    <!-- Font Awesome Free CDN (works without account) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Icons css -->
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="bg-slate-100 tracking-wide">
@@ -27,46 +30,46 @@
             <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-neutral-900/90 to-neutral-950/80"></div>
         </div>
 
-        <div class="container relative my-16">
-            <a href="#" class="flex mb-12"><img src="assets/images/logo.png" alt="logo" class="h-12"></a>
-            <h2 class="text-5xl uppercase mb-4 text-start text-white">Coming Soon</h2>
+        <div class="container relative mx-4 md:mx-auto">
+            <a href="#" class="flex mb-6"><img src="assets/images/logo.png" alt="logo" class="h-12"></a>
+            <h2 class="text-lg md:text-3xl uppercase mb-4 text-start text-white">Coming Soon</h2>
 
             <div class="my-10 text-white">
                 <div class="flex flex-wrap items-center justify-center md:justify-start">
-                    <div class="border border-dotted border-neutral-600 h-40 w-44 flex items-center justify-center">
+                    <div class="border border-dotted border-neutral-600 h-20 w-22 md:h-40 md:w-44 flex items-center justify-center">
                         <div class="text-center">
-                            <span id="days" class="lg:text-6xl text-3xl"></span>
+                            <span id="days" class="text-lg md:text-6xl"></span>
                             <p>days</p>
                         </div>
                     </div>
 
-                    <div class="border border-dotted border-neutral-600 h-40 w-44 flex items-center justify-center">
+                    <div class="border border-dotted border-neutral-600 h-20 w-22 md:h-40 md:w-44 flex items-center justify-center">
                         <div class="text-center">
-                            <span id="hours" class="lg:text-6xl text-3xl"></span>
+                            <span id="hours" class="text-lg md:text-6xl"></span>
                             <p>Hours</p>
                         </div>
                     </div>
 
-                    <div class="border border-dotted border-neutral-600 h-40 w-44 flex items-center justify-center">
+                    <div class="border border-dotted border-neutral-600 h-20 w-22 md:h-40 md:w-44 flex items-center justify-center">
                         <div class="text-center">
-                            <span id="minutes" class="lg:text-6xl text-3xl"></span>
+                            <span id="minutes" class="text-lg md:text-6xl"></span>
                             <p>Minutes</p>
                         </div>
                     </div>
 
-                    <div class="border border-dotted border-neutral-600 h-40 w-44 flex items-center justify-center">
+                    <div class="border border-dotted border-neutral-600 h-20 w-22 md:h-40 md:w-44 flex items-center justify-center">
                         <div class="text-center">
-                            <span id="seconds" class="lg:text-6xl text-3xl"></span>
+                            <span id="seconds" class="text-lg md:text-6xl"></span>
                             <p>Seconds</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <p class="text-base md:text-xl text-gray-300">Our Team Have Been Working On Something Amazing <br> We Will Be Back Soon.</p>
+            <p class="text-base text-gray-300">Our Team Have Been Working On Something Amazing <br> We Will Be Back Soon.</p>
 
             <form class="w-full flex items-center">
-                <div class="border rounded-md border-neutral-500 shadow-lg  mt-14">
+                <div class="border rounded-md border-neutral-500 shadow-lg  mt-4">
                     <input type="email" name="email" id="email" class="sm:w-96 p-4 border-0 focus:outline-none focus:ring-0 text-sm bg-transparent text-white" placeholder="Enter Your Email" autocomplete="off">
                     <button class="py-2 px-6 me-2 border-0 text-white font-semibold text-sm rounded-md bg-neutral-800/60 hover:bg-neutral-800 transition-all duration-500">
                         <div class="flex items-center justify-center gap-1">
@@ -96,16 +99,40 @@
                 </a>
             </div>
 
-            <p class="opacity-75 text-white py-8"> ©
+            <p class="opacity-75 text-white mt-8"> ©
                 <script>document.write(new Date().getFullYear())</script>
                 Design with <i class="fa-solid fa-heart text-red-500"></i>
-                <a href="#"> by Techzaa.</a>
+                <a href="#"> by CreativeHand.</a>
             </p>
         </div>
     </section>
     <!-- Home Start -->
 
+    <!-- ✅ Countdown Timer Script -->
+    <script>
+        const targetDate = new Date("2026-07-29T00:00:00").getTime();
 
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance < 0) return;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor(
+                (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            );
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script>
     <!-- Theme Js -->
     <script src="assets/js/theme.js"></script>
 

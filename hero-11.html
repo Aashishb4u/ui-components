@@ -3,30 +3,54 @@
 
 <head>
     <meta charset="utf-8" />
-    <title> TechSlider - Hero Slider Tailwind CSS 3 HTML Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="TechSlider - Hero Slider Tailwind CSS 3 HTML Template, It’s fully responsive and built Tailwind v3" name="description" />
+    <title>CreativeHand - Hero Slider Tailwind CSS 3 HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="CreativeHand - Hero Slider Tailwind CSS 3 HTML Template, It’s fully responsive and built Tailwind v3"
+        name="description" />
     <meta content="Techzaa" name="author" />
+
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
     <!-- remixicon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
 
     <!-- Style css -->
-    <link href="assets/css/hero_style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/hero_style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const swiper = new Swiper('.swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                },
+                slidesPerView: 1,
+                spaceBetween: 20,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
 </head>
 
 <body>
-
-    <section class="bg-no-repeat relative 2xl:h-screen overflow-hidden">
-        <!-- Swiper -->
+    <section class="relative h-screen w-full  bg-cover "> <!-- Swiper -->
         <div id="slider_1" class="swiper bg-cover">
             <div class="swiper-wrapper">
-                <div class="swiper-slide bg-cover pt-60 pb-96" style="background-image: url('assets/images/swiper/img-38.jpg');">
+                <div class="swiper-slide bg-cover pt-60 pb-96"
+                    style="background-image: url('assets/images/swiper/img-38.jpg');">
                     <div class="absolute inset-0 bg-black/80"></div>
 
                     <div class="text-center max-w-2xl mx-auto relative">
@@ -36,15 +60,20 @@
                             </div>
                         </div>
                         <h1 class="md:text-5xl/snug text-3xl font-semibold text-white mt-14">Music for everyone.</h1>
-                        <p class="text-base font-normal text-white/50 mt-5">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atqued corrupti quos dolores et quas molestias excepturi sintoccaecati cupiditate.</p>
+                        <p class="text-base font-normal text-white/50 mt-5">At vero eos et accusamus et iusto odio
+                            dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atqued corrupti quos
+                            dolores et quas molestias excepturi sintoccaecati cupiditate.</p>
 
                         <div class="mt-10">
-                            <a href="#" class="py-[18px] px-8 rounded-md text-base font-normal text-white bg-blue-600 hover:shadow-lg hover:shadow-blue-600/30 focus:text-black transition-all duration-500">Get Started</a>
+                            <a href="#"
+                                class="py-[18px] px-8 rounded-md text-base font-normal text-white bg-blue-600 hover:shadow-lg hover:shadow-blue-600/30 focus:text-black transition-all duration-500">Get
+                                Started</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="swiper-slide bg-cover pt-60 pb-96" style="background-image: url('assets/images/swiper/img-39.jpg');">
+                <div class="swiper-slide bg-cover pt-60 pb-96"
+                    style="background-image: url('assets/images/swiper/img-39.jpg');">
                     <div class="absolute inset-0 bg-black/80"></div>
 
                     <div class="text-center max-w-2xl mx-auto relative">
@@ -53,16 +82,22 @@
                                 <i class="ri-copper-coin-fill text-3xl text-white"></i>
                             </div>
                         </div>
-                        <h1 class="md:text-5xl/snug text-3xl font-semibold text-white mt-10">Powerful virtual conference Platform</h1>
-                        <p class="text-base font-normal text-white/50 mt-5">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atqued corrupti quos dolores et quas molestias excepturi sintoccaecati cupiditate.</p>
+                        <h1 class="md:text-5xl/snug text-3xl font-semibold text-white mt-10">Powerful virtual conference
+                            Platform</h1>
+                        <p class="text-base font-normal text-white/50 mt-5">At vero eos et accusamus et iusto odio
+                            dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atqued corrupti quos
+                            dolores et quas molestias excepturi sintoccaecati cupiditate.</p>
 
                         <div class="mt-10">
-                            <a href="#" class="py-[18px] px-8 rounded-md text-base font-normal text-white bg-blue-600 hover:shadow-lg hover:shadow-blue-600/30 focus:text-black transition-all duration-500">Get Started</a>
+                            <a href="#"
+                                class="py-[18px] px-8 rounded-md text-base font-normal text-white bg-blue-600 hover:shadow-lg hover:shadow-blue-600/30 focus:text-black transition-all duration-500">Get
+                                Started</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="swiper-slide bg-cover pt-60 pb-96" style="background-image: url('assets/images/swiper/img-40.jpg');">
+                <div class="swiper-slide bg-cover pt-60 pb-96"
+                    style="background-image: url('assets/images/swiper/img-40.jpg');">
                     <div class="absolute inset-0 bg-black/80"></div>
 
                     <div class="text-center max-w-2xl mx-auto relative">
@@ -71,11 +106,16 @@
                                 <i class="ri-stack-fill text-3xl text-white"></i>
                             </div>
                         </div>
-                        <h1 class="md:text-5xl/snug text-3xl font-semibold text-white mt-10">We're creative digital marketing agency</h1>
-                        <p class="text-base font-normal text-white/50 mt-5">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atqued corrupti quos dolores et quas molestias excepturi sintoccaecati cupiditate.</p>
+                        <h1 class="md:text-5xl/snug text-3xl font-semibold text-white mt-10">We're creative digital
+                            marketing agency</h1>
+                        <p class="text-base font-normal text-white/50 mt-5">At vero eos et accusamus et iusto odio
+                            dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atqued corrupti quos
+                            dolores et quas molestias excepturi sintoccaecati cupiditate.</p>
 
                         <div class="mt-10">
-                            <a href="#" class="py-[18px] px-8 rounded-md text-base font-normal text-white bg-blue-600 hover:shadow-lg hover:shadow-blue-600/30 focus:text-black transition-all duration-500">Get Started</a>
+                            <a href="#"
+                                class="py-[18px] px-8 rounded-md text-base font-normal text-white bg-blue-600 hover:shadow-lg hover:shadow-blue-600/30 focus:text-black transition-all duration-500">Get
+                                Started</a>
                         </div>
                     </div>
                 </div>
